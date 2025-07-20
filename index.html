@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>C.me Cheat Sheet</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Abril+Fatface&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Orbitron:wght@400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body style="padding-top: 300px">
+    <header>
+      <h1 id="headertext">HTML &amp; CSS Cheat Sheet</h1>
+    </header>
+
+    <div class="mainhtml">
+      <h2 class="homehtml">HTML</h2>
+      <figure id="html_figure">
+        <img src="code2.jpg" width="350" height="250" alt="html_image" />
+      </figure>
+    <div class="buttons_html">
+      <a href="#html_1" id="startHtml">Start learning HTML!</a>
+      <a href="#menu" id="chooseTopic">Choose the topic yourself</a>
+    </div>
+    </div>
+
+    <br />
+
+    <div class="maincss">
+      <h2 class="homecss">CSS</h2>
+      <figure id="css_figure">
+        <img src="code1.jpg" width="350" height="250" alt="css_image" />
+      </figure>
+    <div class="buttons_css">
+      <a href="#css_1" id="startCss">Jump into your first CSS note!</a>
+      <a href="#menu" id="chooseTopic_2">See all topics</a>
+    </div>
+    </div>
+
+    <div>
+      <div class="sidebar">
+        <ul id="menu" style="display: none">
+          <li><a href="#" data-target="html_1">HTML_1 :Introduction to HTML</a></li>
+          <li><a href="#" data-target="html_2">HTML_2 :HTML Tags</a></li>
+          <li><a href="#" data-target="html_3">HTML_3 :Semantic HTML</a></li>
+          <li><a href="#" data-target="css_1">CSS_1 :Introduction to CSS</a></li>
+          <li><a href="#" data-target="css_2">CSS_2 :Selectors</a></li>
+          <li><a href="#" data-target="css_3">CSS_3 :Visual Rules</a></li>
+          <li><a href="#" data-target="css_4">CSS_4 :The Box Model</a></li>
+          <li><a href="#" data-target="css_5">CSS_5 :Display and Positioning</a></li>
+          <li><a href="#" data-target="css_6">CSS_6 :More Details on Improved Styling</a></li>
+        </ul>
+      </div>
+
+      <div class="content_area">
+        <section id="html_1" style="display: none">
+          <h2 class="contentheaders">HTML_1 :Introduction to HTML</h2>
+          <article>
+            <div class="note">
+                <h3>HTML Basics</h3>
+                   <p>HTML = HyperText Markup Language</p>
+
+                   <p>HTML elements canonically contain opening and closing tags with raw text or other HTML tags between them.</p>
+
+                   <p>HTML elements can be nested. The enclosed element is regarded as the child of the enclosing parent element.</p>
+
+                   <p>Any visible content should come in <code>&lt;body&gt;</code> tags (including footer).</p>
+
+                   <p><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code> are used to provide titles for content.</p>
+
+                   <p><code>&lt;p&gt;</code> plain text and paragraphs.</p>
+
+                   <p><code>&lt;span&gt;</code> – for marking a particular component and/or components in other elements.</p>
+
+                   <p><code>&lt;div&gt;</code> – for divisions.</p>
+
+                   <p><code>&lt;br&gt;</code> – line break</p>
+
+                   <p><code>&lt;img&gt;</code> – images</p>
+
+                   <p><code>&lt;video&gt;</code> – videos</p>
+
+                   <p><code>&lt;audio&gt;</code> – audios</p>
+
+                   <p><code>&lt;ol&gt;</code> – ordered list</p>
+
+                   <p><code>&lt;ul&gt;</code> – unordered list</p>
+
+                   <p><code>&lt;em&gt;</code> – for making the content italic.</p>
+
+                   <p><code>&lt;strong&gt;</code> – to make the content appear in bold.</p>
+            </div>
+          </article>
+        </section>
+
+        <section id="html_2" style="display: none">
+          <h2 class="contentheaders">HTML_2 :HTML Tags</h2>
+          <article>
+            <p>HTML tags are generally used to describe the content that they surround. The first line of a HTML document involves <code>&lt;!DOCTYPE html&gt;</code>. This tag is regarded as a declaration and it must always appear on the first line in your HTML files. The first line which involves this declaration lets the browser know what version of HTML to expect.
+            </p>
+            <p>
+             All of your HTML code should be written in <code>&lt;html&gt;</code> element. The information about the webpage such as the title, should be contained by <code>&lt;head&gt;</code> of the page. The <code>&lt;title&gt;</code> of the webpage appears in a browsers’ tab.
+            </p>
+            <p>
+            <code>&lt;a&gt;</code> tags are quite useful as they function to link not only internal pages but also external pages or content on the same page. <code>&lt;!-- comment --&gt;</code> is used to add comments on a HTML document.
+            </p>
+          </article>
+        </section>
+
+        <section id="html_3" style="display: none">
+          <h2 class="contentheaders">HTML_3 :Semantic HTML</h2>
+          <article>
+              <p>
+                Semantic elements provide info about the content. With semantic HTML tags it gets much easier to identify what is inside parent tags.
+              </p>
+                <p>
+                <code>&lt;nav&gt;</code> is used to define a block of navigation links such as menus and tables of contents.
+                </p>
+                <p>
+                <code>&lt;section&gt;</code> is used to define elements in a document, such as chapters, headings, or any other area of the document with the same theme.
+                </p>
+                <p>
+                <code>&lt;aside&gt;</code> is used to mark additional information that can enhance another element. Aside can involve bibliographies, endnotes, comments, pull quotes, editorial sidebars and additional information.
+                </p>
+                <p>
+                <code>&lt;figure&gt;</code> is used to encapsulate media such as an image, illustration, diagram, code snippet, etc.
+                </p>
+                <p>
+                <code>&lt;article&gt;</code> holds content that makes sense on its own such as articles, blogs, comments.
+                </p>
+                <p>
+                <code>&lt;figcaption&gt;</code> is used to describe the media.
+                </p>
+                <p>
+                <code>&lt;video&gt;</code>, <code>&lt;embed&gt;</code>, and <code>&lt;audio&gt;</code> elements are used for media files.
+                </p>
+          </article>
+        </section>
+
+        <section id="css_1" style="display: none">
+          <h2 class="contentheaders">CSS_1 :Introduction to CSS</h2>
+          <article>
+              <h3>What is CSS?</h3>
+                <p>
+                    Cascading Style Sheets or <strong>CSS</strong> is a language that is used to style the HTML document on web pages.
+                </p>
+                <p>In order to style a document you can:</p>
+                    <ul>
+                        <li>Create a <code>style.css</code> file and use a <code>&lt;link&gt;</code> to connect the stylesheet with your HTML document.</li>
+                        <li>Use the <code>&lt;style&gt;&lt;/style&gt;</code> element to write CSS code inside the HTML document.</li>
+                    </ul>
+              <h3>Classes and IDs</h3>
+                <p>
+                 CSS can select HTML elements by their type, class, and ID. CSS classes and IDs have different purposes, which can affect which one you use to style HTML elements.
+                </p>
+                <p>
+                 While <strong>classes</strong> are meant to be used many times, an <strong>ID</strong> is meant to style only one element. IDs override the styles of types and classes.
+                </p>
+                <p>
+                 Since IDs override these styles, they should be used sparingly and only on elements that need to always appear the same.
+                </p>
+          </article>
+        </section>
+
+        <section id="css_2" style="display: none">
+          <h2 class="contentheaders">CSS_2 :Selectors</h2>
+          <article>
+              
+                <p>
+                 CSS can select HTML elements by <strong>type</strong>, <strong>class</strong>, <strong>ID</strong>, and <strong>attribute</strong>.
+                </p>
+                <ul>
+                    <li>All elements can be selected using the <strong>universal selector</strong> (<code>*</code>).</li>
+                    <li>An element can have different states using the <strong>pseudo-class selector</strong> (e.g., <code>:hover</code>).</li>
+                    <li><strong>Multiple CSS classes</strong> can be applied to one HTML element.</li>
+                    <li><strong>Classes</strong> can be reusable, while <strong>IDs</strong> can only be used once.</li>
+                    <li>
+                    <strong>IDs</strong> are more specific than <strong>classes</strong>, and <strong>classes</strong> are more specific than <strong>type</strong>. That means IDs will override any styles from a class, and classes will override any styles from a type selector.
+                    </li>
+                    <li>
+                    <strong>Multiple selectors</strong> can be chained together to select an element. This raises the specificity but can be necessary.
+                    </li>
+                    <li>
+                    <strong>Nested elements</strong> can be selected by separating selectors with a space (e.g., <code>div p</code>).
+                    </li>
+                    <li>
+                   <strong>Multiple unrelated selectors</strong> can receive the same styles by separating the selector names with commas (e.g., <code>h1, h2, p</code>).
+                    </li>
+               </ul>
+          </article>
+        </section>
+
+        <section id="css_3" style="display: none">
+          <h2 class="contentheaders">CSS_3 :Visual Rules</h2>
+          <article>
+              <p>In progress..</p>
+          </article>
+        </section>
+
+        <section id="css_4" style="display: none">
+          <h2 class="contentheaders">CSS_4 :The Box Model</h2>
+          <article>
+              <p>In progress..</p>
+          </article>
+        </section>
+
+        <section id="css_5" style="display: none">
+          <h2 class="contentheaders">CSS_5 :Display and Positioning</h2>
+          <article>
+              <p>In progress..</p>
+          </article>
+        </section>
+
+        <section id="css_6" style="display: none">
+          <h2 class="contentheaders">CSS_6 :More Details on Improved Styling</h2>
+          <article>
+              <p>In progress..</p>
+          </article>
+        </section>
+      </div>
+    </div>
+    <footer>
+        Created by: Gülfem Croft   E-mail:byte.me.with.c@gmail.com   Instagram: c.me_official
+    </footer>
+  </body>
+</html>

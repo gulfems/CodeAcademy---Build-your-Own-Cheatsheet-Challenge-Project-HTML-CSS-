@@ -1,0 +1,229 @@
+header { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    background-image: url("header.png"); 
+    background-size: 200vh; 
+    background-position: calc(-128px + 4vw) center; 
+    background-repeat: no-repeat; 
+    height: 300px; 
+    width: 100%; 
+    z-index: 1000; 
+}
+header h1 {
+    max-width: 1920px;
+    padding: 80px 15px 0 calc(312px + 4vw);
+    font-size: 6.3rem;
+    line-height: 1.2;
+    z-index: 2;
+    font-family: orbitron, sans-serif;
+    color: rgba(11, 251, 0, 0.5);
+    text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 4px;
+    position: relative;
+    background: none;
+}
+@media only screen and (max-width: 1880px) {
+    
+  header h1 { padding-top: 0; margin-top: 24px; 
+    }
+}
+@media only screen and (max-width: 1140px) {
+  header h1 { padding-top: 48px; font-size: 4rem; }
+}
+@media only screen and (max-width: 850px) {
+  header h1 { padding-top: 0; }
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+}
+
+.buttons_css a{
+    cursor:pointer;
+}
+
+.mainhtml h2,
+.maincss h2 {
+    display: block;
+    position:absolute;
+    font-family: orbitron;
+    font-size: 5rem;
+    margin-bottom: 0;
+    margin-left: 500px;
+    margin-right:500px;
+    text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 4px;
+    background:none;
+}
+
+.buttons_html a{
+    cursor: pointer;
+    background: linear-gradient(rgb(0,184,195), rgb(136,193,225),rgb(0,83,195));
+    font-size: 1.2rem;
+    color:blue;
+    font-family:orbitron,sans-serif;
+    display:inline-block;
+    position:relative;
+    padding: 12px 14px;
+    box-shadow: rgb(136, 136, 136) 1px 1px 2px;
+    border-radius: 128px;
+    border: 1px outset rgb(106, 197, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.buttons_css a{
+    cursor:pointer;
+    background:linear-gradient(rgb(0,228,64), rgb(135,224,160),rgb(2,107,12));
+    font-size:1.2rem;
+    color:darkgreen;
+    font-family:orbitron,sans-serif;
+    display:inline-block;
+    position:relative;
+    padding:12px 14px;
+    box-shadow:rgb(136,136,136) 1px 1px 2px;
+    border-radius:128px;
+    border: 1px outset rgb(0, 255, 21);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#startHtml{
+    left: 1500px;
+    bottom: 170px;
+}
+
+#chooseTopic{
+    left:1250px;
+    bottom:120px;
+}
+
+#startCss{
+    left:1500px;
+    bottom:170px;
+}
+
+#chooseTopic_2{
+    left:1250px;
+    bottom:120px;
+}
+
+#html_figure {
+    display: inline-block;
+    position: relative;
+    left: 950px;
+    top: 20px;
+    bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px;
+    border-radius: 15px;
+    border: 5px solid;
+    margin: 0;
+    padding: 0;
+    line-height: 0; 
+}
+
+#css_figure {
+    display: inline-block;
+    position: relative;
+    left: 950px;
+    top: 20px;
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 4px 8px;
+    border-radius: 15px;
+    border: 5px solid;
+    margin: 0;
+    padding: 0;
+    line-height: 0; 
+    
+}
+
+.mainhtml {
+    background: linear-gradient(135deg, #0097ff, #00ffe7); /* mavi tonlar arasında geçiş */
+    margin-top: 16px;
+}
+
+.maincss {
+    background: linear-gradient(135deg, #35d735, #afff35); 
+}
+
+
+.sidebar {
+    width: 250px;
+    font-size: medium;
+    text-decoration: none;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    vertical-align: top;
+    box-sizing: border-box;
+    margin-top:40px;
+    background: linear-gradient(135deg, #0097ff, #00ffe7);
+    border-radius: 12px;
+    padding-bottom: 500px;
+    display: inline-block;
+}
+
+#menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+    font-family:Roboto-Condensed,sans-serif;
+    box-shadow: inset;
+    font-weight:bold;
+    font-size: larger;
+}
+
+#menu li {
+    margin-bottom: 8px;
+    margin-top:0;
+}
+
+.content_area{
+    width: calc(100% - 280px); 
+    background-color: orange;
+    font-size: large;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 16px;
+    margin-top:40px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #35d735, #afff35);
+}
+
+.content_area h2{
+    font-family:orbitron,sans-serif;
+    font-weight:bold;
+    font-size: xx-large;
+}
+
+article {
+    background: rgba(221,221,221,0.5);
+    border-radius:12px;
+    font-size: larger;
+    font-family:Roboto-Condensed, sans-serif;
+}
+
+code {
+    font-weight: bold;
+    font-size:larger;
+    color:rgb(196, 23, 209);
+    font-family:orbitron;
+}
+
+footer {
+    padding: 20px;
+    background-color: blue;
+    font-size: medium;
+    font-weight:bold;
+    color:white;
+    text-align: center;
+    font-family:orbitron;
+    
+}
+
